@@ -1,6 +1,6 @@
 <p align="center">
     <a href="http://www.threewhite.top/" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/justacoder99/r2coding@master/img/r2coding_logo_index.15y992dieibg.png" width=""/>
+        <img src="https://elite-file.oss-cn-shanghai.aliyuncs.com/logo/logoo.png" width=""/>
     </a>
 </p>
 
@@ -19,7 +19,7 @@
 ---
 
 > [!TIP]
->  本站取名 **r2coding**，即 **Road To Coding**，意为「编程自学之路」，是自学编程以来所用资源和分享内容的大聚合。
+>  本站取名 **growth**，即 **growth**，意为「编程自学之路」，是自学编程以来所用资源和分享内容的大聚合。
 >  
 >  旨在为编程自学者提供一系列：
 >  - **清晰的编程自学路线**
