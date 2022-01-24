@@ -1,9 +1,9 @@
-
 <p align="center">
-    <a href="https://www.r2coding.com/" target="_blank">
+    <a href="http://www.threewhite.top/" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/justacoder99/r2coding@master/img/r2coding_logo_index.15y992dieibg.png" width=""/>
     </a>
 </p>
+
 
 
 <p align="center">
@@ -14,7 +14,6 @@
     <img src="https://img.shields.io/badge/微信联系作者-WeChat-green.svg" alt="微信联系">
   </a>
 </p>
-
 ---
 # **为什么会有这个网站**
 ---
@@ -50,7 +49,7 @@
 >  - **大数据开发**
 >  - **嵌入式开发**
 >  - **网络安全方向**
->  
+> 
 
 后续本站也会持续更新和增加更多方向岗位的学习路线...
 
@@ -112,7 +111,7 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 ---
 > [!NOTE]
 >  - [**【置顶笔记下载1】熬10天夜，我肝出了这个PDF版「服务器软件安装手册」**](https://mp.weixin.qq.com/s/YNOZSQ5smo1uGE5ZttUZ_w)
->  
+> 
 >  - [**【置顶笔记下载2】再肝两夜，写了个「服务器项目部署」实战PDF手册**](https://mp.weixin.qq.com/s/JUJ6qu_ec3s1JmTxQt_V3g)
 
 > **工欲善其事，必先利其器！**
@@ -136,6 +135,7 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 ---
 
 > [!NOTE]
+>
 >  - [**【本章节置顶资源下载】自学编程一路走来，这些私藏工具和网站我全贡献出来了！（附我的浏览器书签下载）**](https://mp.weixin.qq.com/s/XUHnLCbq7mDWhOc9imTVzg)
 
 程序员在平时的日常**工作**、**学习**、**开发**、**做笔记**、**写博客**等过程中还是有很多好用并且高效的**在线工具推荐**的，毕竟我们不是每时每刻我们都需要那种很重量级的本地软件。下面将分成**16个大类**，共整理了约**130+个**常用的在线工具和网站供大家食用。
@@ -804,11 +804,11 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 ---
 > [!NOTE]
 >  - 计算机基础聊完了，接下来就是应用和实践的环节了。这部分通常会涉及到一些**工具**、**编程环境**、以及**应用框架**。
->  
+> 
 >  - 企业级开发不同于个人自学，出于**可复用性**、**稳定性**、**开发成本**、**开发效率**、**质量保证**等一系列因素的考量，不可能每一个功能、每一个组件都从0开始徒手造轮子，所以这时候各种应用框架和工具的出现就非常有帮助了。
->  
+> 
 >  - 其实框架讲白了就是别人经过多年迭代写好的一套**工具**、**代码库**、**逻辑**、亦或是**流程**，把原本都需要从0开始手写的基本功能和组件都给封装进去，用户只要符合框架约定的规则进行编码，或者调用框架提供的方法或者工具，就能快速拉起业务功能，创造实际经济价值。
->  
+> 
 >  - 所以框架的出现从不同的角度看也是有多面性的：对于企业级开发效率提升而言肯定是有帮助的，但是对于程序员个人思考编码能力提升却未必是好事，所以多注重基础、深挖原理，提升自身竞争力还是非常有必要的。
 
 
@@ -979,11 +979,10 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
         <img src="https://cdn.jsdelivr.net/gh/justacoder99/r2coding@master/img/bookref.32p5e3kiqri0.jpg" width=""/>
     </a>
 </p>
-
 ---
 > [!TIP]
 >  - 毫无疑问的是，对于上文提到的 **「编程基础」** 部分，有大量经典的书籍值得阅读，每一本都是大师们若干年经验的汇聚，所以学好编程基础，对于我们普通人来说，看书是一个非常直接有效的方式。
->  
+> 
 >  - 很多经典书看一遍可能远远不够，正所谓 **「初看懵、再看迷、三看发现有点小意思」** 讲的就是这个道理，这事急不得，而且有些东西的确需要一个反反复复的过程，有些甚至是在工作后的实践中才会遇到，所以珍惜每一次回炉重造的过程吧。
 ---
 
@@ -1014,7 +1013,6 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
   <a href="#README?id=视频教程推荐">点击查看
   </a>
 </p>
-
 ---
 # **项目经验获得**
 
@@ -1243,7 +1241,6 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 - [采访了一位技术总监：聊了聊跳槽的心态问题](https://mp.weixin.qq.com/s/NGJc71cW2TKEONe6jhIUSg)
 - [程序员从技术→管理，要走哪些路？](https://mp.weixin.qq.com/s/4_MB3L511h7qoXNxPRdOvQ)
 
-
 ---
 # **视频教程推荐**
 
@@ -1263,21 +1260,18 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=6159200&bvid=BV11s41167h6&cid=10001692&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 >  - **《数据结构-浙江大学》**
 
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=18586085&bvid=BV1JW411i731&cid=30323260&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 >  - **《数据结构与算法基础（青岛大学-王卓）》**
 
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=82837069&bvid=BV1nJ411V7bd&cid=141710539&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 >  - **《尚硅谷 Java数据结构与算法）》**
 
@@ -1293,28 +1287,24 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=64605483&bvid=BV1c4411d7jb&cid=112161859&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 > - **《2019 王道考研 计算机网络》**
 
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=70228743&bvid=BV19E411D78Q&cid=121579556&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 > - **《韩立刚 计算机网络》**
 
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=415599826&bvid=BV1gV411h7r7&cid=262615706&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 > - **《计算机网络（谢希仁第七版）-方老师》**
 
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=421258608&bvid=BV1H3411y7q6&cid=430413734&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 #### **操作系统**
 
@@ -1323,7 +1313,6 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 <p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=89733537&bvid=BV1N741177F5&cid=153258157&page=1&as_wide=1&high_quality=1&danmaku=1" allowfullscreen="true" width="100%" height="450" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 </p>
-
 ---
 > - **《操作系统（哈工大李治军老师）》**
 
@@ -1587,12 +1576,11 @@ https://static.r2coding.com/r2_static/pdf/c.pdf
 
 ## GitHub开源地址
 
-- [https://github.com/rd2coding/Road2Coding](https://github.com/rd2coding/Road2Coding) **欢迎Star支持**
+- [https://github.com/zhangxiansheng123/growth](https://github.com/zhangxiansheng123/growth)  **欢迎Star支持**
 
 ## Gitee开源地址
 
-- [https://gitee.com/rd2coding/Road2Coding](https://gitee.com/rd2coding/Road2Coding) **欢迎Star支持**
-
+- [https://github.com/zhangxiansheng123/growth](https://github.com/zhangxiansheng123/growth) **欢迎Star支持**
 
 ---
 # 持续更新中...
