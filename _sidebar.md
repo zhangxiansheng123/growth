@@ -145,17 +145,17 @@
 
 **Kafka**
 
-* [好用的kafka客户端](docs\kafka\好用的Kafka客户端.md)
+* [好用的kafka客户端](docs/kafka/好用的Kafka客户端.md)
 
-* [Kafka集群搭建](docs\kafka\Kafka集群搭建.md)
-* [Kafka常用命令](docs\kafka\Kafka常用命令.md)
+* [Kafka集群搭建](docs/kafka/Kafka集群搭建.md)
+* [Kafka常用命令](docs/kafka/Kafka常用命令.md)
 
 **RabbitMQ**
 
 **Nginx**
 
 - [某俄罗斯小哥，竟靠一个服务器软件直接封神？](docs/nginx/nginx.md)
-- [nginx实际开发应用](docs\nginx\nginx实际开发应用.md)
+- [nginx实际开发应用](docs/nginx/nginx实际开发应用.md)
 
 **面试之神**
 
