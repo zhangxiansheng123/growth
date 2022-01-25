@@ -1,6 +1,6 @@
 # :rainbow: To Be Better Javaer，Java 程序员进阶之路 - 通俗易懂、风趣幽默
 
-> **作者：** 沉默王二，Java Developer，[:pencil2: 个人博客](https://itwanger.com)，[:books: 计算机经典书单(download)](https://mp.weixin.qq.com/s/qwUtTbfDB36VSwnjMRakqA)
+> **作者：** 张先生，Java Developer，[:pencil2: 个人博客](https://itwanger.com)，[:books: 计算机经典书单(download)](https://mp.weixin.qq.com/s/qwUtTbfDB36VSwnjMRakqA)
 
 >🌈 Java 程序员进阶之路，本专栏风趣幽默、通俗易懂，对 Java 爱好者极度友好和舒适😄，内容包括 Java 基础、Java 并发编程、Java 虚拟机、Java 面试题、Java 企业级开发（Git、SSM、Spring Boot）、计算机基础知识（操作系统、计组、计网、数据结构与算法）等核心知识点。如果本专栏为你提供了帮助，请给予支持(star一下，或者推荐给你的朋友)！
 
@@ -14,7 +14,7 @@
 - [参与贡献](https://github.com/itwanger/toBeBetterJavaer#muscle-参与贡献)
 
 具体章节可以参照下面这张思维导图（绿色✅的部分是已经更新的）
-  
+
 ![](https://img-blog.csdnimg.cn/85a7af0298ec42ee91fd806286bf0fd1.png)
 
 
@@ -217,6 +217,10 @@
 
 - [JVM 是什么？](docs/jvm/what-is-jvm.md)
 
+- [JVM调优](docs\jvm\jvm调优.md)
+
+  
+
 ## 求职面试
 
 ### 八股文
@@ -240,25 +244,14 @@
 
 # :paw_prints: 联系作者
 
-- **技术交流群**
+- **wx加我好友**
 
-    本群的宗旨是给大家提供一个良好的技术学习交流平台，所以杜绝一切广告！<br>由于微信群人满 100 之后无法加入，请先添加作者微信「qing_geee」（也可以扫描下方的二维码），备注：加群。
-    
-    <div align="left">
-        <img src="https://cdn.jsdelivr.net/gh/itwanger/toBeBetterJavaer/images/qing_geee.png" width="260px">
-    </div>
+联系作者：技术文通俗易懂，吹水文风趣幽默。<br>可以扫描下方的二维码就可以联系我了，请备注blog。
 
-- **原创公众号**
+<div align="left">
+    <img src="https://elite-file.oss-cn-shanghai.aliyuncs.com/pay/%E6%88%91%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="260px">
+</div>
 
-    本号的slogan：技术文通俗易懂，吹水文风趣幽默。<br>目前已有近 10 万读者关注，微信搜索「**沉默王二**」（也可以扫描下方的二维码）就可以关注我了。
-    
-    <div align="left">
-        <img src="https://cdn.jsdelivr.net/gh/itwanger/toBeBetterJavaer/images/gongzhonghao.png" width="260px">
-    </div>
-
-    回复关键字「**03**」可以下载《Java 程序员进阶之路》专栏的离线 PDF 版本（暗黑版和亮白版）。
-    
-    
 - **star 趋势图**
 
 [![Stargazers over time](https://starchart.cc/itwanger/toBeBetterJavaer.svg)](https://starchart.cc/itwanger/toBeBetterJavaer)
@@ -273,11 +266,12 @@
 
 # :gift: Donate
 
-开源不易，如果《Java 程序员进阶之路》专栏对你有些帮助，可以请二哥喝杯咖啡，算是对开源做出的一点点鼓励吧！
+开源不易，如果《Java 程序员进阶之路》专栏对你有些帮助，可以请小兄弟喝杯咖啡，算是对开源做出的一点点鼓励吧！
 
 <div align="left">
-    <img src="https://cdn.jsdelivr.net/gh/itwanger/toBeBetterJavaer/images/zhifu.png" width="260px">
+    <img src="https://elite-file.oss-cn-shanghai.aliyuncs.com/pay/%E5%BE%AE%E4%BF%A1%E8%B5%9E%E8%B5%8F%E7%A0%81.jpg" width="260px">
 </div>
+
 
 :gift_heart: 感谢大家对我资金的赞赏，每隔一个月会统计一次。
 

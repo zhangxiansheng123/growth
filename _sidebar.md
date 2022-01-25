@@ -169,6 +169,7 @@
 **Java 虚拟机**
 
 - [初识JVM](docs/jvm/what-is-jvm.md)
+- [JVM调优](docs\jvm\jvm调优.md)
 
 **八股文**
 
