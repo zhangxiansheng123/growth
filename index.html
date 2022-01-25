@@ -2,23 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Record growth</title>
+  <title>Java程序员进阶之路</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="keywords" content="Java后端开发,前端开发,大数据开发,数据结构,算法题,leetcode,开源,代码,计算机网络,操作系统,设计模式,编译原理,计算机组成原理,Spring,Spring Boot,Spring Cloud,Redis,MongoDB,Linux,JVM,IDEA,Docker,Git,SVN,MySQL,Tomcat,Nginx,Kubernetes,Elasticsearch,Kafka,程序员,分布式,微服务,大数据,开发者,编程,">
+  <meta name="description" content="本站内容主要包含但不限于：Java后端、大数据开发、数据结构、算法题、leetcode、计算机网络、操作系统、设计模式、编译原理、计算机组成原理、Spring Boot、Spring Cloud、Git、SVN、Linux、IDEA、MySQL、Redis、Tomcat、Nginx、Kubernetes、Elasticsearch、Kafka、微服务分布式、高可用架构、中间件、数据库、缓存、消息队列、系统监控等知识分享。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <style type="text/css">
+    .sidebar .sidebar-nav {
+      padding-left: 15px;
+    }
+
+    section.cover .cover-main blockquote{
+      font-size: 1rem;
+    }
+
+    .cover-main img[alt=logo]{
+      width: 112px;
+    }
+
+
+  </style>
 </head>
 <body>
-  <div id="app"></div>
+  <nav>
+      <a href="https://mp.weixin.qq.com/s/bUTOG2jOw1gWw-YpZaxqww">计算机经典书单下载</a>
+  </nav>
+  
+  <div id="app">加载中。。。</div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: 'https://github.com/zhangxiansheng123/growth',
-	  coverpage: true,
-	  loadNavbar: true
+      name: '<span>🌈Java程序员进阶之路</span>',
+      repo: 'https://github.com/itwanger/toBeBetterJavaer',
+      loadSidebar: true,
+      autoHeader: true,
+      coverpage: true,
+      logo: 'https://cdn.jsdelivr.net/gh/itwanger/toBeBetterJavaer/images/logo-01.png',
+      auto2top: true,
+      nameLink: 'https://tobebetterjavaer.com', 
+      search: {
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '找不到结果',
+        depth: 3,
+      },
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer style="text-align: center">',
+            '<p>',
+              '<img src="https://cdn.jsdelivr.net/gh/itwanger/toBeBetterJavaer/images/logo-01.png" alt="Java 程序员进阶之路" height="150px">',
+            '</p>',
+            '<p>',
+            '<span>',
+            '<a href="https://beian.miit.gov.cn/" style="color:#939393;font-size: 80%;" target="_blank">豫ICP备2021038026号-1</a>',
+            '</span>',
+            '<span>  •  </span>',
+            '<span>',
+            '<img src="https://cdn.jsdelivr.net/gh/itwanger/toBeBetterJavaer/images/beian.png" height="15px" width="15px" />',
+            '<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41030502000411" style="display:inline-block;font-size: 80%;color:#939393;">',
+            '<span style="margin: 0px 0px 0px 5px; color:#939393;">豫公网安备 41030502000411号</span>',
+            '</a>',
+            '</span>',
+            '</p>',
+            '<p>',
+            'Copyright © 2021-2022 <span><a href="https://mp.weixin.qq.com/s/1_lOGt4Fl6Yy8iVdxWeI5g" style="font-size:80%;color:blue;" target="_blank">沉默王二</a></span> , All rights reserved.',
+            '</p>',
+          ].join('');
+          hook.afterEach(function (html) {
+            var isReadme = window.location.href.indexOf("README");
+            if (isReadme === -1) {
+              // return header + html + footer;
+              return html + footer;
+            } else {
+              return html + footer;
+            }
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280744178'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1280744178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </body>
 </html>
