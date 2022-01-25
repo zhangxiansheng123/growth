@@ -59,6 +59,7 @@
 ### **Nginx**
 
 - [某俄罗斯小哥，竟靠一个服务器软件直接封神？](docs/nginx/nginx.md)
+- [nginx实际开发应用](docs\nginx\nginx实际开发应用.md)
 
 ### **Intellij IDEA**
 
