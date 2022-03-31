@@ -22,13 +22,23 @@ kafka-topics.sh --zookeeper localhost:2181 --create --topic test  --replication-
 kafka-topics.sh --zookeeper localhost:2181 --delete  --topic test
 ```
 
-5. 查询所有消费者
+5. 查询所有消费者组
 
 ```shell
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 ```
 
+6. 查询消费者组详情
 
+```shell
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group helloworld
+```
+
+7. 删除消费者组
+
+```shell
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --delete --group helloworld
+```
 
 **Note**:以上命令可以直接使用是配置了kafka环境变量，如下：
 

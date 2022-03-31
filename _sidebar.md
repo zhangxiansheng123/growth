@@ -1,3 +1,28 @@
+**2022金三银四面试**
+
+* [JavaSE面试精选](/docs/interview/javase.md)
+* [JavaWEB面试精选]()
+* [Redis面试精选](/docs/interview/redis.md)
+* [JVM面试精选](/docs/interview/jvmoptimize.md)
+* [JUC多线程面试精选](/docs/interview/juc.md)
+* [Mysql面试精选](/docs/interview/mysql.md)
+* [SpringMVC面试精选]()
+* [Spring面试精选](/docs/interview/spring.md)
+* [Mybatis面试精选]()
+* [SpringBoot面试精选](/docs/interview/springboot.md)
+* [SpringBoot面试精选2](/docs/interview/springboot2.md)
+* [SpringCloud面试精选](/docs/interview/springcloud.md)
+* [Zookeeper面试精选]()
+* [Kafka、RabbitMQ面试精选](/docs/interview/mq.md)
+* [Elasticsearch面试精选]()
+* [数据结构与算法面试精选]()
+* [Nginx面试精选]()
+* [Linux&&Docker&&Git运维](/docs/interview/linuxoperate.md)
+
+**后端这些年**
+
+* [程序员缺乏经验的七种表现](/docs/backend-this-years/littlewhhite.md)
+
 **Java 概述**
 
 - [什么是 Java](docs/overview/what-is-java.md)
@@ -107,7 +132,7 @@
 **Java 虚拟机**
 
 - [初识JVM](docs/jvm/what-is-jvm.md)
-- [JVM调优](docs\jvm\jvm调优.md)
+- [JVM调优](docs/jvm/jvmoptimize.md)
 
 **Spring**
 
@@ -145,17 +170,16 @@
 
 **Kafka**
 
-* [好用的kafka客户端](docs/kafka/好用的Kafka客户端.md)
-
-* [Kafka集群搭建](docs/kafka/Kafka集群搭建.md)
-* [Kafka常用命令](docs/kafka/Kafka常用命令.md)
+* [好用的kafka客户端](docs/kafka/kafka1.md)
+* [Kafka集群搭建](docs/kafka/kafka3.md)
+* [Kafka常用命令](docs/kafka/kafka2.md)
 
 **RabbitMQ**
 
 **Nginx**
 
 - [某俄罗斯小哥，竟靠一个服务器软件直接封神？](docs/nginx/nginx.md)
-- [nginx实际开发应用](docs/nginx/nginx实际开发应用.md)
+- [nginx实际开发应用](docs/nginx/nginx2.md)
 
 **面试之神**
 
@@ -210,6 +234,7 @@
 
 **实战经验**
 
+- [Docker容器化部署SpringBoot应用](/docs/szjy/springbootoperation.md)
 - [Java 程序员进阶之路网站上线了，颜值贼高](docs/szjy/tobebetterjavaer-wangzhan-shangxian.md)
 - [273 块钱购入的域名，值了](docs/szjy/tobebetterjavaer-yuming-jiexi.md)
 - [3 年9.9元，HTTP升级到HTTPS，值了！](docs/szjy/tobebetterjavaer-https.md)
