@@ -4,7 +4,7 @@
 * [JavaWEB面试精选]()
 * [Redis面试精选](/docs/interview/redis.md)
 * [JVM面试精选](/docs/interview/jvmoptimize.md)
-* [JUC多线程面试精选](/docs/interview/juc.md)
+* [多线程、Synchronized、JUC面试精选](/docs/interview/juc.md)
 * [Mysql面试精选](/docs/interview/mysql.md)
 * [SpringMVC面试精选]()
 * [Spring面试精选](/docs/interview/spring.md)
