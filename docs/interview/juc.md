@@ -37,7 +37,7 @@
   6. TERMINATED: 终止线程的线程状态。线程已完成执行
   ```
 
-  ![image-20220402162406011](G:\myselfstudy\growth\images\thread\thread_status.png)
+  ![image-20220402162406011](../../images/thread/thread_status.png)
 
   ```java
   线程的生命周期大致包括五个阶段：
@@ -48,7 +48,7 @@
   5. 销毁 如果线程正常执行完毕后或线程被提前强制性的终止或出现异常导致结束，那么线程就要被销毁，释放资源
   ```
 
-  ![image-20220402162713777](G:\myselfstudy\growth\images\thread\thread_life_round.png)
+  ![image-20220402162713777](../../images/thread/thread_life_round.png)
 
 * 线程的创建方式，线程是怎样实现的，获取多线程的方法有几种？(高频四种)
 
@@ -337,7 +337,8 @@
 * CyclicBarrier和CountDownLatch的区别？
 
   ```
-  CountDownLatch的计数器只能使用一次，而CyclicBarrier的计数器可以使用reset()方法重置，可以使用多次，所以CyclicBarrier能够处理更为复杂的场景；CountDownLatch允许一个或多个线程**等待一组事件的产生**，而CyclicBarrier用于等待其他线程**运行到栅栏位置**。（比如打怪，所有的"过关了"都是由最后到达await方法的线程执行打印的）
+  CountDownLatch的计数器只能使用一次，而CyclicBarrier的计数器可以使用reset()方法重置，可以使用多次，所以CyclicBarrier能够处理更为复杂的场景；
+  CountDownLatch允许一个或多个线程等待一组事件的产生，而CyclicBarrier用于等待其他线程运行到栅栏位置（比如打怪，所有的"过关了"都是由最后到达await方法的线程执行打印的）
   ```
 
 * MONICA_:
