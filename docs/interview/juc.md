@@ -1,5 +1,3 @@
-## 多线程、Synchronized、JUC(java.util.concurrent)
-
 * 什么是死锁，死锁如何产生的，如何避免，实际开发中有没有遇到？
 
   ```java
