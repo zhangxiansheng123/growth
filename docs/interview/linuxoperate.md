@@ -22,6 +22,7 @@
 
    ```
    docker logs -f -n 100 容器名  # 动态输出容器日志
+   docker logs -f --tail 100 容器名 # 同上
    ```
 
 4. 容器的交互

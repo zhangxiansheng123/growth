@@ -1,6 +1,6 @@
 1. 分别说说你对Springboot和SpringCloud的理解?[参考该文章](http://blog.cuicc.com/blog/2015/07/22/microservices/#fn1)
 
-   springcloud是基于springboot的一套实现微服务的框架。微服务架构是一种将一个单一应用程序开发为一组小型服务的方法，每个服务运行在自己的进程中，服务间通信采用轻量级通信机制(通常用HTTP资源API)。这些服务可以独立部署。springcloud是微服务架构的一种java实现，它提供了配置管理，服务注册，断路器，网关，等组件。和springboot配置使用，让开发微服务架构变得更简单。（springboot理解见springboot面试题）
+   springcloud是基于springboot实现的一套微服务框架。微服务架构是一种将一个单一应用程序开发为一组小型服务的方法，每个服务运行在自己的进程中，服务间通信采用轻量级通信机制(通常用HTTP资源API)。这些服务可以独立部署。springcloud是微服务架构的一种java实现，它提供了配置中心，注册中心，断路器，网关，等组件。和springboot配置使用，让开发微服务架构变得更简单。（springboot理解见springboot面试题）
 
 2. 什么是分布式，分布式与集群关系、分布式和微服务的关系？
 

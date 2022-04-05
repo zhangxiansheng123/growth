@@ -22,19 +22,21 @@
 
 3. rabbitmq消息模式有几种，使用的哪个模式？
 
+   ![image-20220405103121440](../../images/mq/rabbitmq_model.png)
+
    rabbitmq有五种消息模型:
 
-   简单模型：(simple)点对点
+   1、基本消费模型：(simple)点对点， 生产者——>队列——>一个消费者
 
-   工作队列：(work)可以搭建消费者集群
+   2、工作队列：(work)可以搭建消费者集群，生产者——>队列——>多个消费者共同消费
 
-   发布订阅：（publish/subscribe）
+   3、订阅模型——Fauout：（publish/subscribe）广播，将消费交给所有绑定交换机的队列，每个消费者都可以收到同一条消息。
 
-   路由模型：（Routinng，发布订阅之路由）
+   4、订阅模型——Direct：（Routinng，发布订阅之路由）定向，将消息交给符合指定rotingKey的队列（路由模式）
 
-   通配模型：（Topics，发布订阅之通配符）
+   5、订阅模型——Topic：（Topics，发布订阅之通配符）把消息交给符合routing pattern（主题模式）的队列。
 
-   我们使用的是Topics模式。
+   我们使用的是Topics模式，3、4、5这三种都属于订阅模型，只不过进行路由的方式不同。
 
 4. rabbitmq的交换机和路由键？
 
@@ -99,7 +101,7 @@
    - 开启多线程消费：spring.rabbitmq.listener.simple.concurrency=4
    - 能者多劳：channel.basicQos(1)  或者 spring.rabbitmq.listener.simple.prefetch=1
 
-7. rabbitmq如何避免消息重复消费，即幂等性？
+10. rabbitmq如何避免消息重复消费，即幂等性？
 
    让每个消息携带一个全局的唯一ID比如（UUID），即可保证消息的幂等性，具体消费过程为：
 
@@ -109,14 +111,14 @@
 
    如果需要存入db的话，可以直接将这个ID设为消息的主键，下次如果获取到重复消息进行消费时，由于数据库主键的唯一性，则会直接抛出异常。
 
-8. rabbitmq如何保证消息的顺序性？
+11. rabbitmq如何保证消息的顺序性？[具体参考](https://blog.csdn.net/AAA821/article/details/86650471)
 
-   - 拆分多个queue，每个queue一个consumer，我们可使用**Hash取模法**，让同一个订单发送到同一个队列中，再使用同步发送，只有同个订单的创建消息发送成功，再发送支付消息。这样，我们保证了发送有序。然后队列满足FIFO，剩下的只需要一个消费者顺序消费就行了。
-   - 或者就一个 queue 但是对应一个 consumer，然后这个 consumer 内部用内存队列做排队，然后分发给底层不同的 worker 来处理。
+    - 在 MQ 里面创建多个 queue，同一规则的数据（对唯一标识进行 hash），有顺序的放入 MQ 的 queue 里面，消费者只取一个 queue 里面获取数据消费，这样执行的顺序是有序的。
+    - 或者就一个 queue 但是对应一个 consumer，然后这个 consumer 内部用内存队列做排队，然后分发给底层不同的 worker 来处理。
 
-   ![rabbitmq-order-02.png](../../images/spring/rabbitmq-order-02.png)
+    ![rabbitmq-order-02.png](../../images/spring/rabbitmq-order-02.png)
 
-9. rabbitmq的延迟队列？
+12. rabbitmq的延迟队列？
 
 ## Kafka
 
