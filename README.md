@@ -7,7 +7,7 @@
 
 # ⛳目录
 
-- 仓库同步：[Github](https://github.com/itwanger/toBeBetterJavaer) | [码云](https://gitee.com/itwanger/toBeBetterJavaer) | [CodeChina](https://codechina.csdn.net/qing_gee/toBeBetterJavaer)
+- 仓库同步：[Github](https://github.com/zhangxiansheng123/growth.git) | [码云](https://gitee.com/itwanger/toBeBetterJavaer) | [CodeChina](https://codechina.csdn.net/qing_gee/toBeBetterJavaer)
 - [学习说明](https://github.com/itwanger/toBeBetterJavaer#bookmark-学习说明)
 - [章节目录](https://github.com/itwanger/toBeBetterJavaer#pencil-章节目录)
 - [联系作者](https://github.com/itwanger/toBeBetterJavaer#paw_prints-联系作者)
