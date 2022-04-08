@@ -1,3 +1,8 @@
+- Java学习路线大全
+  - [Java全栈知识体系](https://www.pdai.tech)
+  - [Java进阶之路](https://tobebetterjavaer.com/)
+  - [Road To Coding](https://r2coding.com/)
+  - [编程导航](https://doc.code-nav.cn/)
 - 开发必备
   - [**在线ASCII码表**](http://www.fly63.com/tool/ascii/)
   - [**正则表达式调试工具**](https://regexr.com/)
@@ -105,3 +110,6 @@
   - [**Vue.js中文文档**](https://cn.vuejs.org/v2/guide/)
   - [**React.js官方文档**](https://reactjs.org/docs/getting-started.html)
   - [**Jenkins中文文档**](https://www.jenkins.io/zh/doc/)
+- 书籍大全
+  - [Java编程思想](https://hardocs.com/d/onjava8/)
+  - [沉默王二书单](https://gitee.com/itwanger/JavaBooks)
