@@ -202,3 +202,5 @@ GC过程：
   jinfo -flags 进程号：查看进程的jvm参数设置
   jstat -gc 进程号：查看jvm结构，GC情况
 ```
+
+[JVM与多线程PDF总结](http://101.35.248.127/interviewpdf/jvmandthreads.pdf)

@@ -18,6 +18,7 @@
 * [数据结构与算法面试精选]()
 * [Nginx面试精选]()
 * [Linux&&Docker&&Git运维](/docs/interview/linuxoperate.md)
+* [各路大神面试题合集](/docs/interview/bigfire.md)
 
 **后端这些年**
 
