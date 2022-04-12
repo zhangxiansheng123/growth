@@ -93,6 +93,8 @@
 
 #### 8、聊一下堆的分区及特点、GC过程、常用的GC算法有哪些，分别用在什么时候，GC收集器有哪些，你们项目使用的垃圾回收器？
 
+[新生代垃圾回收机制](https://blog.csdn.net/qq_40662405/article/details/114783644)
+
 堆中的区域划分，堆里面的分区：Eden，survival from to，老年代：
 
 * 新生区是对象的诞生、成长、消亡的区域，一个对象在这里产生，应用，最后被垃圾回收器收集，结束生命。新生区又分为两部分： 伊甸区（Eden space）和幸存者区（Survivor pace） ，所有的对象都是在伊甸区被new出来的。幸存区有两个： 0区（Survivor 0 space）和1区（Survivor 1 space）。
