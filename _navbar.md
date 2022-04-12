@@ -1,8 +1,12 @@
 - Java学习路线大全
   - [Java全栈知识体系](https://www.pdai.tech)
   - [Java进阶之路](https://tobebetterjavaer.com/)
+  - [JavaGuide](https://javaguide.cn/)
   - [Road To Coding](https://r2coding.com/)
   - [编程导航](https://doc.code-nav.cn/)
+  - [敖丙](https://github.com/AobingJava/JavaFamily)
+  - [小傅哥](https://github.com/fuzhengwei)
+  - [纯洁的微笑](http://www.ityouknow.com)
 - 开发必备
   - [**在线ASCII码表**](http://www.fly63.com/tool/ascii/)
   - [**正则表达式调试工具**](https://regexr.com/)
