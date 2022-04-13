@@ -71,42 +71,42 @@
      * **访问权限不能比父类中被重写的方法的访问权限更低。**
      * 重写方法一定不能抛出新的检查异常或者比被重写方法申明更加宽泛的检查型异常，譬如父类方法声明了一个检查异常 IOException，在重写这个方法时就不能抛出 Exception，只能抛出 IOException 的子类异常，可以抛出非检查异常。
 
-6. 有没有自定义过注解?
+8. 有没有自定义过注解?
 
-7. 静态代码块，普通代码块，构造方法，从类加载开始的执行顺序？
+9. 静态代码块，普通代码块，构造方法，从类加载开始的执行顺序？
 
-8. object类有哪些方法?[参考](https://blog.csdn.net/he6687086/article/details/94882098)
+10. object类有哪些方法?[参考](https://blog.csdn.net/he6687086/article/details/94882098)
 
-   * clone方法   此方法只实现了一个浅层拷贝,对于基本类型字段成功拷贝,但是如果是嵌套对象,只做了赋值,也就是只把地址拷贝了,所以没有成功拷贝,需要自己重写clone方法进行深度拷贝。主要是JAVA里除了8种基本类型传参数是值传递，其他的类对象传参数都是引用传递，我们有时候不希望在方法里将参数改变，这是就需要在类中复写clone方法。如果在clone方法中调用super.clone()方法需要实现Cloneable接口,否则会抛出CloneNotSupportedException。
-   * getClass方法  获取运行时类型,返回值为Class对象
-   * toString方法  返回一个String字符串,用于描述当前对象的信息,可以重写返回对自己有用的信息，默认返回的是当前对象的类名+hashCode的16进制数字
-   * finalize方法  对象在被GC释放之前一定会调用finalize方法，对象被释放前最后的挣扎,因为无法确定该方法什么时候被调用，很少使用。
-   * hashCode方法  该方法用于哈希查找，可以减少在查找中使用equals的次数，重写了equals方法一般都要重写hashCode方法。
-   * equals方法  判断两个对象是否相等，在Object源码中equals就是使用==去判断，所以在Object中equals是等价于==的，但是在String及某些类对equals进行了重写，实现不同的比较。
-   * notify方法  该方法唤醒在该对象上等待的某个线程。
-   * notifyAll方法 该方法唤醒在该对象上等待的所有线程。
-   * wait方法  多线程时用到的方法，作用是让当前线程进入等待状态，同时也会让当前线程释放它所持有的锁。直到其他线程调用此对象的 notify() 方法或 notifyAll() 方法，当前线程被唤醒 （wait会释放锁）
+    * clone方法   此方法只实现了一个浅层拷贝,对于基本类型字段成功拷贝,但是如果是嵌套对象,只做了赋值,也就是只把地址拷贝了,所以没有成功拷贝,需要自己重写clone方法进行深度拷贝。主要是JAVA里除了8种基本类型传参数是值传递，其他的类对象传参数都是引用传递，我们有时候不希望在方法里将参数改变，这是就需要在类中复写clone方法。如果在clone方法中调用super.clone()方法需要实现Cloneable接口,否则会抛出CloneNotSupportedException。
+    * getClass方法  获取运行时类型,返回值为Class对象
+    * toString方法  返回一个String字符串,用于描述当前对象的信息,可以重写返回对自己有用的信息，默认返回的是当前对象的类名+hashCode的16进制数字
+    * finalize方法  对象在被GC释放之前一定会调用finalize方法，对象被释放前最后的挣扎,因为无法确定该方法什么时候被调用，很少使用。
+    * hashCode方法  该方法用于哈希查找，可以减少在查找中使用equals的次数，重写了equals方法一般都要重写hashCode方法。
+    * equals方法  判断两个对象是否相等，在Object源码中equals就是使用==去判断，所以在Object中equals是等价于==的，但是在String及某些类对equals进行了重写，实现不同的比较。
+    * notify方法  该方法唤醒在该对象上等待的某个线程。
+    * notifyAll方法 该方法唤醒在该对象上等待的所有线程。
+    * wait方法  多线程时用到的方法，作用是让当前线程进入等待状态，同时也会让当前线程释放它所持有的锁。直到其他线程调用此对象的 notify() 方法或 notifyAll() 方法，当前线程被唤醒 （wait会释放锁）
 
-9. string类有哪些方法？
+11. string类有哪些方法？
 
-   * length():返回字符串长度。
-   * getBytes():返回字符串的byte类型数组。
-   * equals():字符串比较。
-   * charAt():返回指定索引处的字符。
-   * indexOf():返回指定字符的索引。
-   * replace():字符串替换。 
-   * trim():去除字符串两端空白。 *//去除字符串两端的空格，中间的空格不变，一般用于登陆注册时*
-   * substring():截取字符串。
-   * split():分割字符串，返回一个分割后的字符串数组。
-   * toLowerCase():将字符串转成小写字母。 *//返回将当前字符串中所有字符转换成小写后的新串*
-   * toUpperCase():将字符串转成大写字符。
-   * 构造器方法传入一个字符数组
+    * length():返回字符串长度。
+    * getBytes():返回字符串的byte类型数组。
+    * equals():字符串比较。
+    * charAt():返回指定索引处的字符。
+    * indexOf():返回指定字符的索引。
+    * replace():字符串替换。 
+    * trim():去除字符串两端空白。 *//去除字符串两端的空格，中间的空格不变，一般用于登陆注册时*
+    * substring():截取字符串。
+    * split():分割字符串，返回一个分割后的字符串数组。
+    * toLowerCase():将字符串转成小写字母。 *//返回将当前字符串中所有字符转换成小写后的新串*
+    * toUpperCase():将字符串转成大写字符。
+    * 构造器方法传入一个字符数组
 
-10. string类可以被继承吗，为什么？
+12. string类可以被继承吗，为什么？
 
     * 不可以String类使用了final修饰，被final修饰的类不能被继承（使用final修饰方法的原因有两个。第一个原因是把方法锁定，以防任何继承类修改它的含义；对于被final修饰的变量，如果是基本数据类型的变量，则其数值一旦在初始化之后便不能更改；如果是引用类型的变量，则在对其初始化之后便不能再让其指向另一个对象。虽然不能再指向其他对象，但是它指向的对象的内容是可变的。）。
 
-11. string为什么不可变，string与stringBuffer与stringBuild什么区别，stringbuffer 怎么保证线程安全的？[参考](https://www.cnblogs.com/jiading/articles/12562881.html)
+13. string为什么不可变，string与stringBuffer与stringBuild什么区别，stringbuffer 怎么保证线程安全的？[参考](https://www.cnblogs.com/jiading/articles/12562881.html)
 
     * String是字符串常量，Stringbuffer和StringBuilder是字符串变量
     * String是不可变的，StringBuffer和StringBuilder是可变的。
@@ -116,7 +116,7 @@
     * **String：适用于少量的字符串操作的情况**，**StringBuilder：适用于单线程下在字符缓冲区进行大量操作的情况**，**StringBuffer：适用多线程下在字符缓冲区进行大量操作的情况**
     * 执行速度StringBuilder>StringBuffer>String（修改字符串及线程安全）
 
-12. final能修饰抽象类吗？final 关键字用在哪里?
+14. final能修饰抽象类吗？final 关键字用在哪里?
 
     不能，定义抽象类就是让其他类继承的，final修饰代表不可修改、不可继承，这样彼此就会产生矛盾，所以 final 不能修饰抽象类。
 
@@ -134,44 +134,45 @@
 
       注：显示赋值和代码块赋值只能有其中的一个
 
-13. 接口不能被什么修饰
+15. 接口不能被什么修饰
 
     * 接口不能用private、static、 protected、final修饰，默认是public abstract,jdk1.8接口里的方法不能私有、protected、缺省，可以有静态、default方法，成员变量只能是public static  final 类型 初始化值，public static可以省略。
 
-14. 抽象类的应用场景?
+16. 抽象类的应用场景?
 
     * 当多个类具有共同的属性和行为时，在抽象类中实现，让基类去继承，避免写更多重复的代码。
 
-15. 说一下抽象类和接口，抽象类和接口的区别，能不能用final修饰？[参考](https://blog.csdn.net/qq_41933748/article/details/82670072)
+17. 说一下抽象类和接口，抽象类和接口的区别，能不能用final修饰？[参考](https://blog.csdn.net/qq_41933748/article/details/82670072)
 
-* 接口和抽象类本身的设计就是不同的，接口是对动作的抽象，抽象类是对根源的抽象对一种事物的抽象，接口的设计目的是对类的行为进行约束，也就是提供一种机制，可以强制要求不同的类具有相同的行为更多的是在系统架构设计方法时发挥作用，主要用于定义模块之间的通信契约，抽象类的设计目的是在代码实现方面发挥作用，可以实现代码复用（比如将一些类共有的功能在抽象类中实现，基类只要继承就不用写更多重复的代码，只关心自己的业务实现即可）。
-* 两者语法上的区别：
-  * 相同点：都不能被实例化
-  * 抽象类可以有构造方法（主要用于子类创建对象时，初始化父类成员，子类构造方法中有默认的super()用于访问父类的构造方法），接口中不能有构造方法。
-  * 抽象类中可以有普通成员变量，接口中没有普通成员变量
-  * 抽象类中可以包含非抽象的普通方法
-  * 抽象类和接口中都可以包含静态成员变量，抽象类中的静态成员变量的访问类型可以任意，但接口中定义的变量只能是public static final类型，并且默认即为public static final类型。
-  * 抽象类中的抽象方法的访问类型可以是public，protected，但接口中的抽象方法只能是public类型的，并且默认即为public abstract类型。
-  * 一个类可以实现多个接口，但只能继承一个抽象类。
+    * 接口和抽象类本身的设计就是不同的，接口是对动作的抽象，抽象类是对根源的抽象对一种事物的抽象，接口的设计目的是对类的行为进行约束，也就是提供一种机制，可以强制要求不同的类具有相同的行为更多的是在系统架构设计方法时发挥作用，主要用于定义模块之间的通信契约，抽象类的设计目的是在代码实现方面发挥作用，可以实现代码复用（比如将一些类共有的功能在抽象类中实现，基类只要继承就不用写更多重复的代码，只关心自己的业务实现即可）。
 
-16. Int与integer区别？[参考](https://www.cnblogs.com/guodongdidi/p/6953217.html)
+    * 两者语法上的区别：
+      * 相同点：都不能被实例化
+      * 抽象类可以有构造方法（主要用于子类创建对象时，初始化父类成员，子类构造方法中有默认的super()用于访问父类的构造方法），接口中不能有构造方法。
+      * 抽象类中可以有普通成员变量，接口中没有普通成员变量
+      * 抽象类中可以包含非抽象的普通方法
+      * 抽象类和接口中都可以包含静态成员变量，抽象类中的静态成员变量的访问类型可以任意，但接口中定义的变量只能是public static final类型，并且默认即为public static final类型。
+      * 抽象类中的抽象方法的访问类型可以是public，protected，但接口中的抽象方法只能是public类型的，并且默认即为public abstract类型。
+      * 一个类可以实现多个接口，但只能继承一个抽象类。
 
-* Integer是int的包装类，int则是java的一种基本数据类型 
-* Integer变量必须实例化后才能使用(不实例化默认是null)，而int变量不需要 
-* Integer实际是对象的引用，当new一个Integer时，实际上是生成一个指针指向此对象；而int则是直接存储数据值 
-* Integer的默认值是null，int的默认值是0
+18. Int与integer区别？[参考](https://www.cnblogs.com/guodongdidi/p/6953217.html)
 
-17. 比较两个对象用什么方法，重写了equals为什么要重写hashCode?
+    * Integer是int的包装类，int则是java的一种基本数据类型 
+    * Integer变量必须实例化后才能使用(不实例化默认是null)，而int变量不需要 
+    * Integer实际是对象的引用，当new一个Integer时，实际上是生成一个指针指向此对象；而int则是直接存储数据值 
+    * Integer的默认值是null，int的默认值是0
 
-* ==和equals()可以直接进行引用类型比较，如果两个对象内容相同就是相等，可以重写equals（）进行比较。
+19. 比较两个对象用什么方法，重写了equals为什么要重写hashCode?
 
-18. Hashcode的作用?
+    ==和equals()可以直接进行引用类型比较，如果两个对象内容相同就是相等，可以重写equals（）进行比较。
 
-* hashCode的存在主要是用于查找的快捷性，如Hashtable，HashMap等，hashCode是用来在散列存储结构中确定对象的存储地址的；
-* 如果两个对象相同，就是适用于equals(java.lang.Object) 方法，那么这两个对象的hashCode一定要相同。
-* 如果对象的equals方法被重写，那么对象的hashCode也尽量重写，对象与hashCode必须对应。
+20. Hashcode的作用?
 
-19. bigdecimal 数值怎么比较大小？
+    * hashCode的存在主要是用于查找的快捷性，如Hashtable，HashMap等，hashCode是用来在散列存储结构中确定对象的存储地址的；
+    * 如果两个对象相同，就是适用于equals(java.lang.Object) 方法，那么这两个对象的hashCode一定要相同。
+    * 如果对象的equals方法被重写，那么对象的hashCode也尽量重写，对象与hashCode必须对应。
+
+21. bigdecimal 数值怎么比较大小？
 
 ```java
 // java中对bigdimical比较大小一般用的是bigdemical的compareTo方法
@@ -183,14 +184,14 @@ a = 1,表示bigdemical大于bigdemical2；
 -1：小于；   0 ：等于；   1 ：大于；
 ```
 
-20. Java怎么按行读取文件的？
+22. Java怎么按行读取文件的？
 
     * 构建文件对象
     * 使用文件对象构造Reader对象可以是FileReader、InputStreamReader等
     * 使用Reader对像构建BufferedReader对象(主要使用其readLine()方法，用于按行读取文件)
     * 按行读取文件，将每行获取到的字符串进行处理。
 
-21. 异常类的继承关系,exception下都有那些类?[参考](https://blog.csdn.net/ThinkWon/article/details/101681073)
+23. 异常类的继承关系,exception下都有那些类?[参考](https://blog.csdn.net/ThinkWon/article/details/101681073)
 
     * Java把异常当作对象来处理，并定义一个基类java.lang.Throwable作为所有异常和错误的超类。有两个子类Error和Exception，其中异常类Exception 又分为运行时异常（RuntimeException）和非运行时异常（Unchecked Exception）。
     * Error是程序无法处理的错误，比如OutOfMemoryError、ThreadDeath等。这些异常发生时，
@@ -198,7 +199,7 @@ a = 1,表示bigdemical大于bigdemical2；
     * Exception是程序本身可以处理的异常，这种异常分两大类运行时异常和非运行时异常。
       程序中应当尽可能去处理这些异常。如NullPointerException、IndexOutOfBoundsException等。
 
-22. Jdk1.8新特性有哪些？用过stream流吗？Lambda怎么用的？主要用什么？
+24. Jdk1.8新特性有哪些？用过stream流吗？Lambda怎么用的？主要用什么？
 
     * 函数式接口：**有且仅有一个抽象方法的接口**。函数式接口，即适用于函数式编程场景的接口。而Java中的函数式编程体现就是Lambda，所以函数式接口就是可以适用于Lambda使用的接口。
     * **Lambda表达式**：lambda表达式本质上是一段匿名内部类，也可以是一段可以传递的代码,Lambda允许把函数作为一个方法的参数（函数作为参数传递到方法中）。
@@ -210,15 +211,15 @@ a = 1,表示bigdemical大于bigdemical2；
     * **新工具**：新的编译工具，如：Nashorn引擎 jjs、 类依赖分析器jdeps。
     * **Nashorn，JavaScript引擎**：JDK1.8提供了一个新的Nashorn javascript引擎，它允许我们在JVM上运行特定的javascript应用。
 
-23. 知道哪些设计模式？谈谈对设计模式的理解，知道的设计模式及应用场景？在项目中怎么使用的？
+25. 知道哪些设计模式？谈谈对设计模式的理解，知道的设计模式及应用场景？在项目中怎么使用的？
 
     * 单例模式，工厂模式，代理模式，门面模式，装饰者模式，发布者订阅模式（mq）
 
     * 用过代理模式，在redis缓存数据的时候可能发生，缓存击穿，缓存雪崩，和缓存穿透，在项目我们使用基于代理模式自定义缓存注解，结合分布式锁和布隆过滤器，对目标方法进行了增强，注解中有缓存的有效时间和一个随机值，存入redis时二者相加，使存入时间不同，从而解决了大量key同时过期引起的缓存雪崩，防止缓存击穿的lock,在切面类中完成了这些功能，首先使用布隆过滤器过滤是否存在，不存在直接返回null，若存在则判断缓存中有没有，没有加分布式锁（使用的redisson框架），防止缓存击穿，加锁后再判断缓存中有没有，可能在加锁的过程中已经有别的请求吧数据放入缓存，如果缓存没有则执行目标方法，然后放入缓存，释放分布式锁。
 
-24. 模版设计模式和策略设计模式的应用和原理，画一下策略模式的uml图？
+26. 模版设计模式和策略设计模式的应用和原理，画一下策略模式的uml图？
 
-25. 单例了解吗？说一下有几种单例模式？手写一个单例模式,还要安全？
+27. 单例了解吗？说一下有几种单例模式？手写一个单例模式,还要安全？
 
     单例模式比较完善能保证安全的有五种：
 
@@ -228,24 +229,24 @@ a = 1,表示bigdemical大于bigdemical2；
     * **静态内部类**
     * **枚举**
 
-26. 单例模式的关键点是什么？
+28. 单例模式的关键点是什么？
 
-27. 给我讲讲proxy类的原理是是什么？
+29. 给我讲讲proxy类的原理是是什么？
 
-28. java反射你怎么用的？
+30. java反射你怎么用的？
 
-29. 说一下集合类有哪些？哪些是不安全的？那些是线程安全的？
+31. 说一下集合类有哪些？哪些是不安全的？那些是线程安全的？
 
     * Collection（单列集合，接口）下List接口：ArrayList、LinkedList、Vector,Set接口：HashSet、LinkedHashSet、TreeSet
     * Map（双列集合，接口）HashMap，Hashtable、LinkedHashMap
     * 线程安全的：Vector、synchronizedList、synchronizedSet、synchronizedMap、CopyOnWrite的两个实现CopyOneWriteArrayList 、CopyOneWriteArraySet、ConcurrentHashMap
     * 除了上面线程安全的都是线程不安全的。
 
-30. 常用到的集合？有哪些？有啥特点？
+32. 常用到的集合？有哪些？有啥特点？
 
-31. ConcurrentHashMap为什么是线程安全的？底层原理是什么？
+33. ConcurrentHashMap为什么是线程安全的？底层原理是什么？
 
-32. List的子类,说说他们的区别和底层？扩容机制？ArrayList的扩容机制，为什么是10，为什么是1.5倍？
+34. List的子类,说说他们的区别和底层？扩容机制？ArrayList的扩容机制，为什么是10，为什么是1.5倍？
 
     ArrayList 、 LinkedList   Vector（初始容量10 动态扩容2倍，可以指定每次增加的值）区别：
 
@@ -259,21 +260,17 @@ a = 1,表示bigdemical大于bigdemical2；
 
      * 线程安全:
 
-       ArrayList和LinkedList集合是线程不安全的,执行效率高
-
-       Vector集合是线程安全,执行效率低
+       * 			ArrayList和LinkedList集合是线程不安全的,执行效率高
+       * 			Vector集合是线程安全,执行效率低
 
     * ArrayList初始化及扩容：
 
-      JDK6.0(包含)以前:初始化容量为10
+      * JDK6.0(包含)以前:初始化容量为10
+      * JDK7.0(包含)以后:初始化容量为0,当第一次添加元素的时候初始化为10
+      * JDK6.0(包含)以前: (原来数组的长度 * 3)/2 + 1  即2.5倍
+       * JDK7.0(包含)以后: 原来数组的长度 + (原来数组的长度 >> 1)    即1.5倍
 
-      JDK7.0(包含)以后:初始化容量为0,当第一次添加元素的时候初始化为10
-
-      JDK6.0(包含)以前: (原来数组的长度 * 3)/2 + 1  即2.5倍
-
-      JDK7.0(包含)以后: 原来数组的长度 + (原来数组的长度 >> 1)    即1.5倍
-
-33. 说说HashMap的底层原理？
+35. 说说HashMap的底层原理？
 
     ```
     HashMap基于Map接口实现，以key-value的方式存储，即主要用于存放键值对。HashMap的实现不是同步的，这意味着它不是线程安全的。它主要有这几个特点：
@@ -311,11 +308,11 @@ a = 1,表示bigdemical大于bigdemical2；
 
     * 详情：hashMap底层是通过数组加链表加红黑树实现的，如果你通过无参的构造函数创建hashmap对象时，它的初始化数组长度为0。当第一次向集合中添加元素时，会将数组初始化为16长度的(注意，此时初始化的数组为引用的数组)，以后每次达到临界值（当前数组长度扩容因子），就进行一次扩容，扩容长度为原数组的二倍，扩容的原理为创建一个原数组长度二倍的数组，然后将原数组的元素移动到新数组，进行移动的时候呢也不是一个元素一个元素移动，首先判断，是不是只有一个元素，如果只有一个直接重新通过hash值和新数组长度-1进行按位与运算得到一个0-新数组长度减一的数字，然后将元素放到新数组中该数字对应的下标中，因为只有一个元素，不会有hash值相同的，所以可以直接存放到新数组。如果不是只有一个元素，判断是不是树形节点，如果是树形节点，（暂不做讨论），如果也是非树形节点，就将该下标对应的链表按照hash和新数组长度==0分为两个链表，如果等于0，下标不变，直接挂到新数组相应的下标上，如果不等于0，则直接挂到当前下标加上老数组长度对应的下标上。如果在添加的过程中，某条链表的长度达到了8，并当前数组长度小于64，那么先进行一次扩容。如果节点数达到了8，并且数组长度大于64，对该链表进行树化。如果某次扩容之后，某个红黑树的节点小于等于6，那么再把红黑树链表化。
 
-34. hashset 底层是怎么实现的？[参考](https://blog.csdn.net/qq_40962557/article/details/108699693)
+36. hashset 底层是怎么实现的？[参考](https://blog.csdn.net/qq_40962557/article/details/108699693)
 
     * 其实底层就是一个hashmap，key就是添加的值，value为创建了一个名为PRESENT的Object对象。
 
-35. ArrayList去重，根据对象的某字段？
+37. ArrayList去重，根据对象的某字段？
 
     * ```java
       lists.stream().collect(Collectors.collectingAndThen(Collectors.toCollection(() -> new TreeSet<>(Comparator.comparing(Student::getAge))), ArrayList::new));
@@ -323,13 +320,13 @@ a = 1,表示bigdemical大于bigdemical2；
 
     * 手动去重，先转为map，再存在list。
 
-36. List排序，不能使用comparable接口，不能使用工具类?(应该用排序算法实现了)
+38. List排序，不能使用comparable接口，不能使用工具类?(应该用排序算法实现了)
 
-37. 数组转List?[参考](https://blog.csdn.net/x541211190/article/details/79597236)
+39. 数组转List?[参考](https://blog.csdn.net/x541211190/article/details/79597236)
 
     * 通过 `Arrays.asList(strArray)` 方式,将数组转换List后，不能对List增删，只能查改，否则抛异常。通过ArrayList的构造器，将`Arrays.asList(strArray)`的返回值由`java.util.Arrays.ArrayList`转为`java.util.ArrayList`。通过`Collections.addAll(arrayList, strArray)`方式转换，根据数组的长度创建一个长度相同的List，然后通过`Collections.addAll()`方法，将数组中的元素转为二进制，然后添加到List中，这是最高效的方法。如果JDK版本在1.8及以上，可以使用流`stream`来将下列3种数组快速转为`List`，分别是`int[]`、`long[]`、`double[]`，其他数据类型比如`short[]`、`byte[]`、`char[]`，在JDK1.8中暂不支持。Arrays.stream(new int[] { 1, 2, 3, }).boxed().collect(Collectors.toList());如果是String数组，可以使用`Stream`流这样转换：Stream.of(arrays).collect(Collectors.toList())
 
-38. 遍历集合的方式
+40. 遍历集合的方式
 
     * list
       * for循环（通过获取size()）
